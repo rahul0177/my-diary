@@ -1,0 +1,59 @@
+{%extends 'base.html'%} {%block content%}
+<div class="container bg-light">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <header class="dear-diary">
+        <h3>DEAR DIARY</h3>
+      </header>
+      <a class="btn btn-success d-block text-center mb-2" href="{% url 'add' %}"
+        >ADD</a
+      >
+      {%for entry in entries%}
+      <div class="box">
+        <div class="m-1 border p-5">
+          <p class="lead-text">
+            {{entry.text|upper}}
+          </p>
+          <h6 class="float-left text-muted">{{entry.date_posted}}</h6>
+
+          <span class="float-right">
+            <div class="dropdown">
+              <a
+                class=" dropdown-toggle btn btn-secondary rounded-circle"
+                href="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+              </a>
+
+              <div
+                class="dropdown-menu dropdown-menu-right"
+                aria-labelledby="dropdownMenuLink"
+              >
+                <a
+                  class="dropdown-item"
+                  href="{% url 'update' pk=entry.id %}"
+                  role="button"
+                  >edit</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="{% url 'delete' pk=entry.id %}"
+                  role="button"
+                  >delete</a
+                >
+              </div>
+            </div>
+          </span>
+        </div>
+      </div>
+      {%endfor%}
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>
+{%endblock content%}

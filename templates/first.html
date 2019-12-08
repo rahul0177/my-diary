@@ -1,0 +1,30 @@
+{%extends 'base.html'%} {%block content%}
+<div class="body-first">
+  <div class="container-fluid ">
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <h1 class="fonth1 text-center">IT'S PERSONAL</h1>
+        <h3 class="fonth3 text-center">Express youself with words.</h3>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+</div>
+<div class="body-second">
+  <div class="container">
+    <p class="body-second-p text-center p-5">
+      Get inspired and create your own Diary. It's intimate and fun.
+    </p>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    {%for image in images%}
+    <div class="col-md-6">
+      <img src="{{image}}" class="img-thumbnail" alt="Responsive image" />
+    </div>
+    {%endfor%}
+  </div>
+</div>
+{%endblock content%}

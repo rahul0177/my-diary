@@ -1,0 +1,7 @@
+{%extends 'base.html'%} {%load crispy_forms_tags %} {%block content%}
+<form method="POST">
+  {%csrf_token%}
+  <p>Are you sure you want to delete?</p>
+  <button class="btn btn-primary" type="submit">Yes</button>
+</form>
+{%endblock content%}

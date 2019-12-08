@@ -1,0 +1,92 @@
+@media (max-width: 640px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .body-first {
+    background-color: black;
+    color: blanchedalmond;
+  }
+  .body-second {
+    background-color: #0275d8;
+  }
+  .body-second-p {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+
+  .dear-diary {
+    background-color: rgb(12, 154, 179);
+    padding: 4px;
+    text-align: center;
+    color: aliceblue;
+    font-weight: 900;
+    margin-bottom: 5px;
+    width: 100%;
+  }
+  .box {
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px;
+    margin-bottom: 5px;
+    padding: 20px;
+  }
+  .fonth1 {
+    font-size: 2.25rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(248, 249, 250);
+  }
+  .fonth3 {
+    font-size: 1.25rem;
+    color: rgb(248, 249, 250);
+  }
+}
+@media (min-width: 1100px) {
+  body {
+    font-size: 1.5rem;
+  }
+
+  .body-first {
+    background-image: url("https://images.pexels.com/photos/261579/pexels-photo-261579.jpeg?cs=srgb&dl=black-and-white-blog-coffee-261579.jpg&fm=jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .body-second {
+    background-color: #0275d8;
+    margin: 1px;
+  }
+  .body-second-p {
+    color: #fff;
+    font-size: 2rem;
+  }
+  .dear-diary {
+    background-color: rgb(12, 154, 179);
+    padding: 4px;
+    text-align: center;
+    color: aliceblue;
+    font-weight: 900;
+    margin-bottom: 5px;
+    width: 100%;
+  }
+  .box {
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px;
+    margin-bottom: 5px;
+    padding: 20px;
+  }
+  .fonth1 {
+    font-size: 5.625rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #0275d8;
+  }
+  .fonth3 {
+    font-size: 3.75rem;
+    color: #0275d8;
+  }
+  .img-thumbnail {
+    width: 100% !important;
+    height: 35rem !important;
+  }
+}

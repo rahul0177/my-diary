@@ -1,0 +1,14 @@
+{%extends 'base.html'%}{%block content%}
+<header class="dear-diary">
+  <h3>DEAR DIARY</h3>
+</header>
+<div class="mt-2">
+  <form method="POST" action="">
+    {%csrf_token%}
+    <div class="form-group">
+      {{form.text}}
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+{%endblock%}
